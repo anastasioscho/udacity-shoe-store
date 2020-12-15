@@ -6,4 +6,7 @@
     <string name="password_edit_text_hint">Please type your password</string>
     <string name="login_button">Login</string>
     <string name="create_account_button">Create an account</string>
+    <string name="welcome_text_view">Welcome</string>
+    <string name="welcome_subtitle_text_view">Click next to read the instructions</string>
+    <string name="next_button">Next</string>
 </resources>
