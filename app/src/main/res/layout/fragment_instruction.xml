@@ -31,6 +31,7 @@
             app:layout_constraintTop_toBottomOf="@id/instructions_title_text_view" />
 
         <Button
+            android:id="@+id/start_button"
             android:layout_width="wrap_content"
             android:layout_height="44dp"
             android:layout_marginBottom="30dp"
