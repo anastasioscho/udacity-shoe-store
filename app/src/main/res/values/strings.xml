@@ -9,7 +9,7 @@
     <string name="welcome_text_view">Welcome</string>
     <string name="welcome_subtitle_text_view">Click next to read the instructions</string>
     <string name="next_button">Next</string>
-    <string name="instructions_text_view">Instructions</string>
+    <string name="instructions_text_view">1. Click start to see a list of shoes.\n2. You can use the menu to logout. Just click the three dots at the top right corner of the screen.\n3. You can add new shoes. Just click the bottom at the bottom right corner of the screen.</string>
     <string name="instructions_title_text_view">Instructions</string>
     <string name="start_button">Start</string>
     <string name="floating_button_content_description">Create a new shoe</string>
