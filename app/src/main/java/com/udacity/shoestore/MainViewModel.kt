@@ -11,6 +11,18 @@ class MainViewModel: ViewModel() {
     val shoes: LiveData<List<Shoe>>
         get() = _shoes
 
+    private val _eventCloseScreen = MutableLiveData<Boolean>()
+    val eventCloseScreen: LiveData<Boolean>
+        get() = _eventCloseScreen
+
+    fun close() {
+        _eventCloseScreen.value = true
+    }
+
+    fun onEventCloseComplete() {
+        _eventCloseScreen.value = null
+    }
+
     init {
         _shoes.value = createSampleShoes()
     }
