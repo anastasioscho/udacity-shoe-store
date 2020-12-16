@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.MainViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -54,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="44dp"
                 android:layout_marginTop="20dp"
+                android:onClick="@{ () -> viewModel.showWelcomeScreen() }"
                 android:text="@string/login_button"
                 android:textAllCaps="false" />
 
@@ -61,6 +69,7 @@
                 android:id="@+id/create_account_button"
                 android:layout_width="match_parent"
                 android:layout_height="44dp"
+                android:onClick="@{ () -> viewModel.showWelcomeScreen() }"
                 android:text="@string/create_account_button"
                 android:textAllCaps="false" />
 
