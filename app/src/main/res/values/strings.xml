@@ -24,4 +24,6 @@
     <string name="save_button">Save</string>
     <string name="cancel_button">Cancel</string>
     <string name="logout_menu_item">Logout</string>
+    <string name="string_value">%s %s</string>
+    <string name="double_value">%s %.1f</string>
 </resources>

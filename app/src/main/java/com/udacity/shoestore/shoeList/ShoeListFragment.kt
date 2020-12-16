@@ -55,10 +55,10 @@ class ShoeListFragment: Fragment() {
     private fun displayShoe(shoe: Shoe) {
         val listItemShoeBinding: ListItemShoeBinding = DataBindingUtil.inflate(layoutInflater, R.layout.list_item_shoe, null, false)
 
-        listItemShoeBinding.nameTextView.text = shoe.name
-        listItemShoeBinding.companyTextView.text = shoe.company
-        listItemShoeBinding.sizeTextView.text = shoe.size.toString()
-        listItemShoeBinding.descriptionTextView.text = shoe.description
+        listItemShoeBinding.nameTextView.text = getString(R.string.string_value, "Shoe name:", shoe.name)
+        listItemShoeBinding.companyTextView.text = getString(R.string.string_value, "Company name:", shoe.company)
+        listItemShoeBinding.sizeTextView.text = getString(R.string.double_value, "Shoe size:", shoe.size)
+        listItemShoeBinding.descriptionTextView.text = getString(R.string.string_value, "Description:", shoe.description)
 
         binding.linearLayout.addView(listItemShoeBinding.root)
     }
