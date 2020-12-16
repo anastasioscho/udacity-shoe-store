@@ -25,6 +25,10 @@ class MainViewModel: ViewModel() {
     val eventShowInstructionScreen: LiveData<Boolean>
         get() = _eventShowInstructionScreen
 
+    private val _eventShowShoeListScreen = MutableLiveData<Boolean>()
+    val eventShowShoeListScreen: LiveData<Boolean>
+        get() = _eventShowShoeListScreen
+
     fun close() {
         _eventCloseScreen.value = true
     }
@@ -47,6 +51,14 @@ class MainViewModel: ViewModel() {
 
     fun onEventShowInstructionScreenComplete() {
         _eventShowInstructionScreen.value = null
+    }
+
+    fun showShoeListScreen() {
+        _eventShowShoeListScreen.value = true
+    }
+
+    fun onEventShowShowListScreenComplete() {
+        _eventShowShoeListScreen.value = null
     }
 
     fun createNewShoe() {
