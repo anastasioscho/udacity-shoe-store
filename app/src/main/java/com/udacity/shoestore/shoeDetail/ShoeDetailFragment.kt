@@ -20,6 +20,7 @@ class ShoeDetailFragment: Fragment() {
         binding = FragmentShoeDetailBinding.inflate(inflater, container, false)
 
         binding.viewModel = viewModel
+        viewModel.createNewShoe()
 
         viewModel.eventCloseScreen.observe(viewLifecycleOwner, Observer { close ->
             close?.let {
