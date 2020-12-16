@@ -13,4 +13,14 @@
     <string name="instructions_title_text_view">Instructions</string>
     <string name="start_button">Start</string>
     <string name="floating_button_content_description">Create a new shoe</string>
+    <string name="name_label">Name:</string>
+    <string name="name_edit_text_hint">Please type the shoe name</string>
+    <string name="company_label">Company:</string>
+    <string name="company_edit_text_hint">Please type the company name</string>
+    <string name="size_label">Size:</string>
+    <string name="size_edit_text_hint">Please type the shoe size</string>
+    <string name="description_label">Description:</string>
+    <string name="description_edit_text_hint">Please type a description</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
 </resources>
