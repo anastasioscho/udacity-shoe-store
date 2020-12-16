@@ -1,12 +1,11 @@
 package com.udacity.shoestore
 
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.models.Shoe
 
-class MainViewModel(application: Application): AndroidViewModel(application) {
+class MainViewModel: ViewModel() {
 
     private val _shoes = MutableLiveData<List<Shoe>>()
     val shoes: LiveData<List<Shoe>>
